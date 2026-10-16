@@ -35,7 +35,7 @@ The agent never pushes to the live branch, never merges, and only has the five G
 | `scripts/add_token.sh` | Stores a client's GitHub token in that client's vault, securely |
 | `claude-lock.json` | Written by `ant apply`. Commit it |
 
-`clients/aibyao/` is your own site, set up as the first client and running twice a month (1st and 15th). Once it runs from here, delete `agents/seo/` from the AI-by-AO repo so the two don't both open pull requests.
+`clients/aibyao/` is your own site, set up as the first client and running twice a month (1st and 15th).
 
 ## What the client's site needs
 
