@@ -55,5 +55,5 @@ focus:
   - Web design in Leeds
 
 max_changes: 6
-schedule: {cron: "10 6 * * 1", timezone: Europe/London}   # weekly on Mondays for our own site
+schedule: {cron: "10 6 1,15 * *", timezone: Europe/London}   # twice a month for our own site
 budget_usd: 15
