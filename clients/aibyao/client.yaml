@@ -1,0 +1,59 @@
+# Client brief. Everything the SEO agent knows about this client comes from this file,
+# the live website and its own memory. Only write facts that are true and that the
+# client is happy to have on their website. Leave a field empty rather than guess.
+
+slug: aibyao
+business_name: AI by AO
+website: https://www.aibyao.com
+repo: Grobler96/AI-by-AO
+branch: main
+host: Vercel
+site_notes: >-
+  Static HTML on Vercel with cleanUrls and no trailing slash. Pages are flat .html files in the
+  repo root, shared CSS and JS in /assets/. The homepage uses GSAP, ScrollTrigger, Lenis and a
+  canvas globe for heavy scroll animation. The agents/ folder is not part of the website.
+
+business_type: AI automation and web design agency
+summary: >-
+  Leeds based agency run by Oliver that builds business automation with n8n, AI phone callers,
+  AI chatbots and fast animated websites for small businesses across West Yorkshire, plus the
+  AI Operations Layer for print and decoration businesses that run on DecoNetwork.
+location: Leeds
+service_area: [Leeds, West Yorkshire]
+services:
+  - Business automation with n8n (the main service)
+  - AI phone callers and AI receptionists
+  - AI chatbots for websites and WhatsApp
+  - Web design (fast, animated websites)
+  - AI Operations Layer for DecoNetwork print and decoration businesses
+ideal_customers: Small and medium businesses in Leeds and West Yorkshire with repetitive admin, missed calls or slow websites.
+
+facts:
+  phone: ""
+  email: grobleroliver@gmail.com
+  address: ""
+  opening_hours: ""
+  founded: ""
+  accreditations: []
+  social_profiles: []
+  other:
+    - Founder is Oliver.
+    - No prices are published on the website; do not add any.
+
+style:
+  language: British English
+  tone: confident, plain and specific, a person talking to a business owner
+  no_dashes: true
+  allow_dash_words: [aiao-consent]
+
+noindex: [/thank-you]
+do_not_touch:
+  - GSAP, ScrollTrigger, Lenis and the globe canvas animation code
+  - The loader, cookie banner, analytics and contact form code
+focus:
+  - Business automation with n8n
+  - Web design in Leeds
+
+max_changes: 6
+schedule: {cron: "10 6 * * 1", timezone: Europe/London}   # weekly on Mondays for our own site
+budget_usd: 15

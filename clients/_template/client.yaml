@@ -1,0 +1,43 @@
+# Client brief. Everything the SEO agent knows about this client comes from this file,
+# the live website and its own memory. Only write facts that are true and that the
+# client is happy to have on their website. Leave a field empty rather than guess.
+
+slug: SLUG                         # short id, lowercase letters, numbers and hyphens
+business_name: ""
+website: https://www.example.co.uk # the canonical origin, no trailing slash
+repo: Grobler96/example-site       # GitHub repo the site deploys from
+branch: main                       # the branch the live site deploys from
+host: Vercel                       # where it is hosted (previews come from here)
+site_notes: >-
+  Static HTML. Pages are flat .html files in the repo root, shared CSS and JS in /assets/.
+
+business_type: ""                  # e.g. plumber, beauty salon, accountant, cafe
+summary: ""                        # two or three sentences: what they do and for whom
+location: ""                       # main town or city
+service_area: []                   # towns, cities or regions they genuinely cover
+services: []                       # one line each, the services they really offer
+ideal_customers: ""
+
+facts:                             # only verified facts; the agent will never invent these
+  phone: ""
+  email: ""
+  address: ""                      # leave empty for service area businesses without a public address
+  opening_hours: ""
+  founded: ""
+  accreditations: []               # e.g. Gas Safe, NICEIC, Which? Trusted Trader
+  social_profiles: []              # full URLs of real profiles (Google Business Profile, Facebook ...)
+  other: []                        # anything else true and useful (guarantees, price guidance ...)
+
+style:
+  language: British English
+  tone: friendly, plain and confident
+  no_dashes: false                 # true = no em dashes, en dashes or hyphenated words in visible copy
+  allow_dash_words: []             # words allowed to keep a hyphen when no_dashes is true
+
+noindex: [/thank-you]              # paths that are meant to be hidden from search
+do_not_touch: []                   # pages, sections or features the agent must leave alone
+focus: []                          # optional: services or areas to prioritise this quarter
+
+max_changes: 6
+schedule: {cron: "10 6 1 * *", timezone: Europe/London}   # monthly by default
+budget_usd: 15                     # hard cap per run

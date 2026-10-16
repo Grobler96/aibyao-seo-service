@@ -1,0 +1,3 @@
+# Holds this client's GitHub token only. Never put a secret in this file.
+type: vault
+display_name: seo-aibyao
