@@ -112,7 +112,7 @@ class Site:
         if rel == "index.html":
             return "/"
         if rel.endswith("/index.html"):
-            return "/" + rel[: -len("index.html")]
+            return "/" + rel[: -len("/index.html")] + ("" if self.clean else "/")
         return "/" + (rel[:-5] if self.clean else rel)
 
     def target(self, href):
